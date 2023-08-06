@@ -1,0 +1,72 @@
+/* estilos generales  */
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background-color: #2b807B;
+    text-align: center;
+    transition-duration: .9s;
+}
+.centrar-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* contenedor  */
+#contenedor{
+    
+    background-color: white;
+    border: 5px solid black;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+/* texto  */
+#color{
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+/* boton  */
+#boton-color{
+    font-size: 2rem;
+    color: white;
+    border-radius: 1rem;
+    background-color: #2b807B;
+    margin: 1rem;
+    padding: .8rem 1.3rem;
+    border: 3px solid black;
+    /* para que el usuario no pueda seleccionar el texto dentro del boton */
+    user-select: none;
+    /* -------- */
+    transition-duration: 0.5s ;
+    cursor: pointer;
+}
+#boton-color:hover{
+    background-color: #16423f;
+    border: 3px solid rgb(0, 235, 244);
+}
+
+@media screen and (max-width:462px){
+    #color {
+        font-size: 3rem;
+    }
+    #boton-color {
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width:300px){
+    #color {
+        font-size: 1.5rem;
+    }
+    #boton-color {
+        font-size: 1rem;
+        padding: 0.5rem 0.9rem;
+    }
+}
